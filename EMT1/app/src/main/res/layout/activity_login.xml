@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="171dp"
+        android:text="LOGIN PAGE"
+        android:textColor="#000"
+        android:textSize="20dp"/>
+
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="317dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="228dp"
+        android:background="@drawable/borderlogin"
+        android:ems="10"
+        android:hint="Enter your Mobile number"
+        android:paddingLeft="10dp"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="63dp" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="315dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/username"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/borderlogin"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="145dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/border"
+        android:onClick="amisha"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="143dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/border"
+        android:text="HOME"
+        android:onClick="shafiq"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/forgetpass"
+        android:layout_width="wrap_content"
+        android:background="#ffff"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-110dp"
+        android:onClick="tst"
+        android:text="|--------------forget password ? --------------|" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+

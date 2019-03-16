@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/border"
+        android:text="Registration Form"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:paddingTop="5dp"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtFullName"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="71dp"
+        android:text="Full Name : "
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtBloodGroup"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="101dp"
+        android:background="@drawable/border2"
+        android:ems="10"
+        android:hint=" Enter Full Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtFullName"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="155dp"
+        android:text="Mobile No:"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtFullName"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="185dp"
+        android:background="@drawable/border2"
+        android:ems="10"
+        android:hint=" Enter Phone no."
+        android:inputType="phone" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtFullName"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="238dp"
+        android:text="Email-id : "
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtFullName"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="267dp"
+        android:background="@drawable/border2"
+        android:ems="10"
+        android:hint=" Enter Email-id"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtFullName"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="325dp"
+        android:text="Blood Group : "
+        android:textColor="#000"
+        android:textSize="20dp"/>
+
+
+    <EditText
+        android:id="@+id/edtBloodGroup"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="354dp"
+        android:background="@drawable/border2"
+        android:ems="10"
+        android:hint=" Enter Blood Group"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtBloodGroup"
+        android:layout_alignStart="@id/edtBloodGroup"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="Office Address :"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtOfficeStreetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add"
+        android:layout_alignStart="@id/add"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/border2"
+        android:ems="7"
+        android:hint=" Street Name"
+        android:textSize="18dp" />
+
+
+    <EditText
+        android:id="@+id/edtOfficeAreaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtOfficeStreetName"
+        android:layout_alignStart="@id/add"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border2"
+        android:hint=" Area Name"
+        android:textSize="18dp"
+        android:ems="7"/>
+
+
+    <EditText
+        android:id="@+id/edtOfficePinCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtOfficeAreaName"
+        android:layout_alignStart="@id/edtOfficeAreaName"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border2"
+        android:ems="5"
+        android:hint=" Pincode" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtBloodGroup"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="20dp"
+        android:text="Home Address :"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtHomeStreetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/border2"
+        android:ems="7"
+        android:hint=" Street Name" />
+
+    <EditText
+        android:id="@+id/edtHomeAreaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtHomeStreetName"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/border2"
+        android:ems="7"
+        android:hint=" Area Name" />
+
+
+    <EditText
+        android:id="@+id/edtHomePinCode"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtHomeAreaName"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="59dp"
+        android:background="@drawable/border2"
+        android:ems="7"
+        android:hint=" Pincode" />
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="189dp"
+        android:layout_height="37dp"
+        android:layout_alignStart="@+id/edtEmail"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@id/vol"
+        android:layout_marginStart="77dp"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/border"
+        android:text="Register"
+        android:textColor="#000000"
+        android:onClick="home"
+        />
+
+    <Button
+        android:id="@+id/vol"
+        android:layout_width="186dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:onClick="loginActivity"
+        android:text="I'm a Volunteer"
+        android:textColor="#000000"
+        tools:ignore="InvalidId,OnClick" />
+
+
+</RelativeLayout>

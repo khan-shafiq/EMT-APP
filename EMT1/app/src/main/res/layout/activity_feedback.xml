@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feedback">
+
+    <TextView
+        android:id="@+id/ack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acknowledgement"
+        android:textSize="28dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:id="@+id/way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ack1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="11dp"
+        android:text="(I am on my way)"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="261dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/way"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="54dp"
+        android:text="No. of patients till now attended "
+        android:textColor="#000000"
+        android:textSize="24dp" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/thumb" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/thumb" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Previous Feedback"
+        android:textSize="20dp"
+        android:background="@drawable/border"
+        />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thankyou for saving my life"
+        android:textSize="19dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="40dp"
+        />
+
+</RelativeLayout>
